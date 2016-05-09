@@ -24,10 +24,16 @@ prompt.get([{
         }
     });
 
-    // get calories 
+    // get calories consumed 
     mfp.fetchDateRange(result.username, result.begin, result.end, ['calories'], function (response) {
+    	var totalCalories = 0, days = 0; 
     	response.data.forEach(function(nutrition){
-        	console.log('Calories for day: ' + nutrition.calories);    		
+        	console.log(nutrition.calories + ' calories consumed on ' + nutrition.date);   
+        	totalCalories += nutrition.calories; 
+        	++days; 
     	});
+
+    	var averageCaloriesForRange = totalCalories / days; 
+    	console.log('Average calories consumed per day for given range: ' + averageCaloriesForRange); 
     });
 });
