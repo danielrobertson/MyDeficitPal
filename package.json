@@ -1,0 +1,19 @@
+{
+  "name": "mydeficitpal",
+  "version": "1.0.0",
+  "description": "caloric deficit summary tool ",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielrobertson/MyDeficitPal.git"
+  },
+  "author": "danielrobertson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielrobertson/MyDeficitPal/issues"
+  },
+  "dependencies": {
+    "mfp": "0.5.6"
+  },
+  "homepage": "https://github.com/danielrobertson/MyDeficitPal#readme"
+}
