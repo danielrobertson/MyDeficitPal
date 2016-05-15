@@ -1,5 +1,4 @@
 var mfp = require('mfp');
-var prompt = require('prompt');
 
 // get myfitnesspal username and date range 
 if (process.argv.length !== 5) {
@@ -29,5 +28,5 @@ mfp.fetchDateRange(username, begin, end, ['calories'], function(response) {
     });
 
     var averageCaloriesForRange = totalCalories / days;
-    console.log('Average calories consumed per day for given range: ' + averageCaloriesForRange);
+    console.log('Average calories consumed per day for ' + begin + ' through ' + end + ': ' + averageCaloriesForRange);
 });
